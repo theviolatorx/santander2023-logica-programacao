@@ -1,26 +1,29 @@
 // elementos do html
 
-const baseRet = document.getElementById('baseRet');
-const alturaRet = document.getElementById('alturaRet');
-const calcButton = document.getElementById('calcButton');
+const numQualquer = document.getElementById('numQualquer');
+
+const procButton = document.getElementById('procButton');
 const resultDiv = document.getElementById('resultDiv');
 
 let mensagem;
 // Ouvinte evento button
 
-calcButton.addEventListener('click', () => {
+procButton.addEventListener('click', () => {
     // converter entrada para float
-    const base = parseFloat(baseRet.value);
-    const altura = parseFloat(alturaRet.value);
+    const numQ = parseFloat(numQualquer.value);
 
     // verificar validade
-    if(isNaN(base) || isNaN(altura)){
+    if(isNaN(numQ)){
         mensagem = '<strong>Por favor, insira um valor válido!</strong>';
     } else {
         // calcular a área do retângulo
-        const areaRet = base * altura
-        mensagem = `<strong>A área do retângulo de altura ${altura}u e base ${base}u é de ${areaRet}u²<strong>`;
+        if (numQ % 2 === 0){
+            mensagem = `par`;
+        } else {
+            mensagem = `ímpar`;
+        }
+        
     }
 
-    resultDiv.innerHTML = mensagem;
+    resultDiv.innerHTML = `<strong>O número ${numQ} é ${mensagem}!<strong>`;
 })
