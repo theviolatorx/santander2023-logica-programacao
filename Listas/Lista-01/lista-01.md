@@ -20,8 +20,8 @@ Coerção e Tipos de Dados:
 * 12- Converta a string "123" em um número inteiro e armazene-o em uma variável.
 * 13- Escreva um programa que adicione um número e uma string. 
 *FALTA EXPLICAR*14- Explique o resultado e discuta a coerção que ocorre.
-15- Declare uma variável com o valor null e outra variável com o valor undefined. Verifique se são iguais em valor e tipo.
-16- Crie um programa que determine se uma variável é do tipo função usando o operador typeof.
+* 15- Declare uma variável com o valor null e outra variável com o valor undefined. Verifique se são iguais em valor e tipo.
+* 16- Crie um programa que determine se uma variável é do tipo função usando o operador typeof.
 
 Operadores Matemáticos e Lógicos:
 
