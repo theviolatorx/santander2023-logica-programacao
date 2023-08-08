@@ -7,7 +7,7 @@ const resultDiv = document.getElementById("resultDiv");
 // Ouvinte evento button
 
 procButton.addEventListener("click", () => {
-  const numQ = parseFloat(numQualquer.value);
+  const numQ = parseInt(numQualquer.value);
 
   // verificar validade
   if (isNaN(numQ)) {
