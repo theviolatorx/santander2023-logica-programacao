@@ -17,7 +17,7 @@ procButton.addEventListener('click', () => {
         mensagem = '<strong>Por favor, insira um valor válido!</strong>';
     } else {
         // calcular a área do retângulo
-        if (numQ % 2 === 0){
+        if (Math.abs(numQ % 2) === 0){
             mensagem = `par`;
         } else {
             mensagem = `ímpar`;
