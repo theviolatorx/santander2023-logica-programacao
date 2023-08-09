@@ -122,6 +122,8 @@ Exiba o preço do bilhete.
 
 40- Verificação de palíndromo
 
+
+
 Peça ao usuário para digitar uma palavra ou frase.
 Use uma estrutura condicional para verificar se a entrada é um palíndromo (lê-se igual de trás para frente e de frente para trás).
 Exiba uma mensagem indicando se a entrada é um palíndromo ou não.
