@@ -1,26 +1,32 @@
 // elementos do html
 
-const baseRet = document.getElementById('baseRet');
-const alturaRet = document.getElementById('alturaRet');
-const calcButton = document.getElementById('calcButton');
-const resultDiv = document.getElementById('resultDiv');
+const resultDiv = document.getElementById('totalCesta');
 
-let mensagem;
+
+const calcButton = document.getElementById('calcButton');
+
+const frutasCesta ={
+    Carambola: 1,
+    Maça: 2,
+    Pera: 3,
+    Abacate: 4,
+    Pitaia: 5,
+    Abacaxi: 6,
+}
+
+
 // Ouvinte evento button
 
 calcButton.addEventListener('click', () => {
-    // converter entrada para float
-    const base = parseFloat(baseRet.value);
-    const altura = parseFloat(alturaRet.value);
+
+    
+    precos = Object.values(frutasCesta)
 
     // verificar validade
-    if(isNaN(base) || isNaN(altura)){
-        mensagem = '<strong>Por favor, insira um valor válido!</strong>';
-    } else {
-        // calcular a área do retângulo
-        const areaRet = base * altura
-        mensagem = `<strong>A área do retângulo de altura ${altura}u e base ${base}u é de ${areaRet}u²<strong>`;
-    }
+    const soma = precos.reduce((acumulador, preco) => acumulador + preco);
+
+    const mensagem = `<strong>R$ ${soma.toFixed(2)}<strong>`;
+
 
     resultDiv.innerHTML = mensagem;
 })

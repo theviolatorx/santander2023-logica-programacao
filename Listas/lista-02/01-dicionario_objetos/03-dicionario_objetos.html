@@ -1,27 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lógica de Programação I</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 <body>
     <div class="container">
         <h2>
-            Calculo da área de um retângulo:
+            Calculo da Cesta de Frutas:
         </h2>
-        <label for="base">Base do retângulo:</label>
-        <input type="number" id="baseRet" placeholder="Informe a base do retângulo" step="0.01" required>
-        <br>
-        <label for="altura">Altura do retângulo:</label>
-        <input type="number" id="alturaRet" placeholder="Insira sua altura" step="0.01" required>
-        <br>
-        <button id="calcButton">Calcular Área</button>
-        <div id="resultDiv"></div>
-      </div>
-      <script type="text/javascript" src="./01-operadores.js"></script>
-      <h1><a href="../../../index.html">HOME</a></h1>
+        <table>
+            <caption>Frutas e Seus Preços:</caption>
+            <thead>
+                <tr>
+                    <th>Fruta</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Carambola</td>
+                    <td>R$ 1,00</td>
+                </tr>
+                <tr>
+                    <td>Maça</td>
+                    <td>R$ 2,00</td>
+                </tr>
+                <tr>
+                    <td>Pera</td>
+                    <td>R$ 3,00</td>
+                </tr>
+                <tr>
+                    <td>Abacate</td>
+                    <td>R$ 4,00</td>
+                </tr>
+                <tr>
+                    <td>Pitaia</td>
+                    <td>R$ 5,00</td>
+                </tr>
+                <tr>
+                    <td>Abacaxi</td>
+                    <td>R$ 6,00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total:</td>
+                    <td id="totalCesta"></td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <button id="calcButton">Calcular Cesta</button>
+        <!-- <div id="resultDiv"></div> -->
+    </div>
+    <script type="text/javascript" src="./03-dicionario_objetos.js"></script>
+    <h1><a href="../../../index.html">HOME</a></h1>
 </body>
+
 </html>
