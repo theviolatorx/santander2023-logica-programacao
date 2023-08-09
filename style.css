@@ -3,7 +3,7 @@
 }
 
 h1 {
-    margin: 20px;
+    margin: 10px;
     text-align: center;
 }
 
@@ -16,7 +16,7 @@ section {
 }
 
 nav {
-    display: inline-flex;
+    display: block;
     margin: 5px;
 }
 
